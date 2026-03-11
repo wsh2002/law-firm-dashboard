@@ -1,0 +1,141 @@
+.target-progress {
+  padding: 10px 0;
+}
+
+.progress-overview {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.progress-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-box {
+  text-align: center;
+  padding: 15px;
+  background: #f7fafc;
+  border-radius: 8px;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #718096;
+  margin-bottom: 8px;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.stat-value.completed {
+  color: #48bb78;
+}
+
+.stat-value.good {
+  color: #4299e1;
+}
+
+.stat-value.warning {
+  color: #ed8936;
+}
+
+.stat-value.danger {
+  color: #fc8181;
+}
+
+.stat-value.highlight {
+  color: #667eea;
+}
+
+.progress-bar-container {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 40px;
+  background: #e2e8f0;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 15px;
+  transition: width 0.5s ease;
+  position: relative;
+}
+
+.progress-fill.completed {
+  background: linear-gradient(90deg, #48bb78 0%, #38a169 100%);
+}
+
+.progress-fill.good {
+  background: linear-gradient(90deg, #4299e1 0%, #3182ce 100%);
+}
+
+.progress-fill.warning {
+  background: linear-gradient(90deg, #ed8936 0%, #dd6b20 100%);
+}
+
+.progress-fill.danger {
+  background: linear-gradient(90deg, #fc8181 0%, #f56565 100%);
+}
+
+.progress-text {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.trend-prediction {
+  background: #edf2f7;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.prediction-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.prediction-label {
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.prediction-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.prediction-status {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.prediction-status.success {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+.prediction-status.fail {
+  background: #fed7d7;
+  color: #742a2a;
+}

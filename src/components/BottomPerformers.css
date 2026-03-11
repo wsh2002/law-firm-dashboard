@@ -1,0 +1,101 @@
+.bottom-performers {
+  padding: 10px 0;
+}
+
+.avg-info {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-left: 4px solid #667eea;
+}
+
+.avg-info strong {
+  color: #667eea;
+  font-size: 20px;
+}
+
+.performers-table {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.performers-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.performers-table thead {
+  background: #f7fafc;
+}
+
+.performers-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a5568;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.performers-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.performers-table tbody tr:hover {
+  background-color: #fff5f5;
+}
+
+.performers-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.performers-table td {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #333;
+}
+
+.name-cell {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.role-cell {
+  color: #718096;
+  font-size: 13px;
+}
+
+.rate-cell {
+  font-weight: 600;
+}
+
+.rate-cell.warning {
+  color: #fc8181;
+}
+
+.gap-cell {
+  color: #e53e3e;
+  font-weight: 500;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: #48bb78;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .performers-table {
+    overflow-x: auto;
+  }
+  
+  .performers-table table {
+    min-width: 600px;
+  }
+}

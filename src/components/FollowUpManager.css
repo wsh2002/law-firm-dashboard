@@ -1,0 +1,169 @@
+.followup-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #ed8936;
+}
+
+.followup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.followup-header h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+.followup-count {
+  background: #ed8936;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.followup-count.success {
+  background: #48bb78;
+}
+
+.no-followup {
+  text-align: center;
+  padding: 30px;
+  color: #48bb78;
+  font-size: 16px;
+}
+
+.followup-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.summary-item {
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.summary-item.urgent {
+  background: #fed7d7;
+  border: 2px solid #fc8181;
+}
+
+.summary-item.normal {
+  background: #bee3f8;
+  border: 2px solid #4299e1;
+}
+
+.summary-label {
+  display: block;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.summary-value {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+}
+
+.followup-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-detail,
+.btn-export {
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-detail {
+  background: #667eea;
+  color: white;
+}
+
+.btn-detail:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+}
+
+.btn-export {
+  background: #48bb78;
+  color: white;
+}
+
+.btn-export:hover {
+  background: #38a169;
+  transform: translateY(-2px);
+}
+
+.followup-list {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.followup-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.followup-list thead {
+  background: #f7fafc;
+}
+
+.followup-list th {
+  padding: 12px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4a5568;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.followup-list td {
+  padding: 12px;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.followup-list tbody tr:hover {
+  background: #f7fafc;
+}
+
+.followup-list tbody tr.urgent-row {
+  background: #fff5f5;
+}
+
+.priority-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.priority-badge.urgent {
+  background: #fc8181;
+  color: white;
+}
+
+.priority-badge.normal {
+  background: #4299e1;
+  color: white;
+}
